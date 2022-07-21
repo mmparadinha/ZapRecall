@@ -67,14 +67,18 @@ ul {
 }
 
 li {
-    box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.15);
     background-color: #FFFFFF;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
     height: 65px;
     padding: 15px;
+}
+
+.pergunta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
 }
 
 h3 {
@@ -88,19 +92,76 @@ h3 {
 
 .flashcard {
     background-color: palegoldenrod;
+    position: relative;
+    min-height: 130px;
 }
 
-.flashcardFrente {
-    background-color: palegoldenrod;
+.flashcard img {
+    width: 30px;
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    cursor: pointer;
 }
 
-.flashcardVerso {
-    background-color: palegreen;
+.flashcard-verso {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .oculta {
     display: none;
 }
+
+.botoes {
+    height: 100%;
+    gap: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.flashcard-verso button {
+    cursor: pointer;
+    box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.15);
+    width: 80px;
+    height: 42px;
+    padding: 5px;
+    color: #FFFFFF;
+    border-radius: 5px;
+    border: none;
+}
+
+button.ruim {
+background-color: red;
+}
+
+button.ok {
+    background-color: orange;
+
+}
+
+button.bom {
+    background-color: green;
+}
+
+.pergunta.ruim {
+    text-decoration: line-through;
+    color: red;
+}
+
+.pergunta.ok {
+    text-decoration: line-through;
+    color: orange;
+
+}
+
+.pergunta.bom {
+    text-decoration: line-through;
+    color: green;
+}
+
 
 .tela-recall-footer {
     background-color: #FFFFFF;
