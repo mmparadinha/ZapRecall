@@ -1,9 +1,9 @@
-export default function TelaInicial() {
+export default function TelaInicial({tela, setTela}) {
     return (
         <div className="tela-inicial">
             <img src="./assets/img/logo.png" alt="logo ZapRecall" />
             <h1>ZapRecall</h1>
-            <button onClick={() => console.log('clicou')}>Iniciar Recall!</button>
+            <button onClick={() => setTela(!tela)}>Iniciar Recall!</button>
         </div>
     )
 }
