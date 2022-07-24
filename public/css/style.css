@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+button {
+    cursor: pointer;
+}
+
 .root {
     background-color: #FB6B6B;
     border: solid 1px #DBDBDB;
@@ -58,7 +62,6 @@ h1 {
 }
 
 ul {
-    background-color: blue;
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -74,20 +77,15 @@ li {
     padding: 15px;
 }
 
-.pergunta {
+.card {
     display: flex;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
 }
 
-h3 {
+h4 {
     font-weight: 700;
-    font-size: 16px;
-}
-
-.pergunta ion-icon {
-    font-size: 23px;
 }
 
 .flashcard {
@@ -123,7 +121,6 @@ h3 {
 }
 
 .flashcard-verso button {
-    cursor: pointer;
     box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.15);
     width: 80px;
     height: 42px;
@@ -146,33 +143,81 @@ button.bom {
     background-color: green;
 }
 
-.pergunta.ruim {
+.card.ruim {
     text-decoration: line-through;
     color: red;
 }
 
-.pergunta.ok {
+.card.ok {
     text-decoration: line-through;
     color: orange;
 
 }
 
-.pergunta.bom {
+.card.bom {
     text-decoration: line-through;
     color: green;
 }
-
 
 .tela-recall-footer {
     background-color: #FFFFFF;
     box-shadow: 0px -4px 6px 0px rgba(0, 0, 0, 0.05);
     position: fixed;
+    padding: 20px;
+    gap: 5px;
     bottom: 0;
     left: 0;
     width: 100vw;
     min-height: 70px;
-    font-size: 18px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+.tela-recall-footer > div {
+    display: flex;
+}
+
+.mensagem-final {
+    margin-bottom: 15px;
+    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.mensagem-final > div {
+    display: flex;
+    align-items: center;
+}
+
+.mensagem-final img {
+    margin-right: 10px;
+    width: 30px;
+}
+
+ion-icon {
+    font-size: 30px;
+}
+
+ion-icon[name="close-circle"] {
+    color: red;
+}
+
+ion-icon[name="help-circle"] {
+    color: orange;
+}
+
+ion-icon[name="checkmark-circle"] {
+    color: green;
 }

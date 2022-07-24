@@ -1,4 +1,7 @@
 import RenderizarFlashcards from "./RenderizarFlashcards.js";
+import RenderizarPlacar from "./RenderizarPlacar";
+import React from 'react';
+import MensagemFinalBoa from "./MensagemFinalBoa.js";
 
 const perguntas = [{pergunta: 'O que é JSX?', resposta: 'Uma extensão de linguagem do JavaScript', estado: 'fechada', resultado: ''},
                   {pergunta: 'O React é __', resposta: 'uma biblioteca JavaScript para construção de interfaces', estado: 'fechada', resultado: ''},
@@ -24,6 +27,9 @@ function criarFlashcards() {
 criarFlashcards();
 
 export default function TelaRecall() {
+    const [placar, setPlacar] = React.useState([]);
+    const [erros, setErros] = React.useState(0);
+   
     return (
         <div className="tela-recall">
             <div className="tela-recall-titulo">
@@ -31,12 +37,15 @@ export default function TelaRecall() {
                 <h1>ZapRecall</h1>
             </div>
             <ul>
-                {flashcards.map((value, index) => <RenderizarFlashcards data={value} index={index+1}/>)}
+                {flashcards.map((value, index) => <RenderizarFlashcards data={value} index={index} placar={placar} setPlacar={setPlacar} erros={erros} setErros={setErros}/>)}
             </ul>
             <div className="tela-recall-footer">
-                <h2>{perguntas.estado !== 'fechada'}/{perguntas.length} CONCLUÍDOS</h2>
+                {placar.length === flashcards.length ? <MensagemFinalBoa erros={erros}/> : ''}
+                <h3>{placar.length}/{flashcards.length} CONCLUÍDOS</h3>
+                <div>
+                    {placar.length !== 0 ? placar.map((value) => <RenderizarPlacar placar={value}/>) : ''}
+                </div>
             </div>
-
         </div>
 
     )
