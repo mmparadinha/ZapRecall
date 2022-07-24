@@ -7,7 +7,7 @@ export default function App() {
 
     return (
         <>
-        {tela ? <TelaInicial tela={tela} setTela={setTela}/> : <TelaRecall />}
+        {tela ? <TelaInicial setTela={setTela}/> : <TelaRecall setTela={setTela}/>}
         </>
     );
 }

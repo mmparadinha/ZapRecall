@@ -33,7 +33,35 @@ h1 {
 .tela-inicial img {
     width: 136px;
     height: 161px;
-    margin-bottom: 15px;
+}
+
+.tela-inicial-config {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 40px;
+    width: 246px;
+}
+
+.tela-inicial input {
+    background-color: #FFFFFF;
+    height: 27px;
+    border-radius: 5px;
+    padding: 10px;
+    border: solid 1px #D70900;
+}
+
+input::placeholder {
+    color: black;
+    opacity: 1;
+}
+
+.tela-inicial select {
+    background-color: #FFFFFF;
+    height: 27px;
+    border-radius: 5px;
+    padding: 5px;
+    border: solid 1px #D70900;
 }
 
 .tela-inicial button {
@@ -41,11 +69,9 @@ h1 {
     background-color: #FFFFFF;
     border-radius: 5px;
     border: solid 1px #D70900;
-    width: 246px;
     height: 54px;
-    margin-top: 30px;
-    font-size: 18px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    font-size: 24px;
+    box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .tela-recall-titulo {
@@ -131,7 +157,7 @@ h4 {
 }
 
 button.ruim {
-background-color: red;
+    background-color: red;
 }
 
 button.ok {
@@ -184,8 +210,20 @@ h3 {
     font-size: 18px;
 }
 
-.tela-recall-footer > div {
+.tela-recall-footer>div {
     display: flex;
+}
+
+.tela-recall-footer button {
+    width: 167px;
+    height: 32px;
+    margin-top: 10px;
+    background-color: #FB6B6B;
+    color: #FFFFFF;
+    border-radius: 5px;
+    font-size: 14px;
+    border: none;
+    box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.15);
 }
 
 .mensagem-final {
@@ -196,7 +234,7 @@ h3 {
     text-align: center;
 }
 
-.mensagem-final > div {
+.mensagem-final>div {
     display: flex;
     align-items: center;
 }
@@ -220,4 +258,22 @@ ion-icon[name="help-circle"] {
 
 ion-icon[name="checkmark-circle"] {
     color: green;
+}
+
+@media (min-width: 1000px) {
+    h1 {
+        font-size: 72px;
+    }
+
+    .tela-inicial-config {
+        width: 450px;
+    }
+
+    .tela-recall-titulo img {
+        height: 120px;
+    }
+
+    ul {
+        width: 568px;
+    }
 }
