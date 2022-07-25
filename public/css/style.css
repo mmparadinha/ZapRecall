@@ -49,6 +49,7 @@ h1 {
     border-radius: 5px;
     padding: 10px;
     border: solid 1px #D70900;
+    box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 input::placeholder {
@@ -62,6 +63,7 @@ input::placeholder {
     border-radius: 5px;
     padding: 5px;
     border: solid 1px #D70900;
+    box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .tela-inicial button {
@@ -190,7 +192,6 @@ button.bom {
     box-shadow: 0px -4px 6px 0px rgba(0, 0, 0, 0.05);
     position: fixed;
     padding: 20px;
-    gap: 5px;
     bottom: 0;
     left: 0;
     width: 100vw;
@@ -212,6 +213,7 @@ h3 {
 
 .tela-recall-footer>div {
     display: flex;
+    margin-bottom: 15px;
 }
 
 .tela-recall-footer button {
@@ -227,8 +229,7 @@ h3 {
 }
 
 .mensagem-final {
-    margin-bottom: 15px;
-    gap: 15px;
+    gap: 5px;
     flex-direction: column;
     align-items: center;
     text-align: center;

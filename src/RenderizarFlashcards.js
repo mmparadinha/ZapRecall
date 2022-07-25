@@ -1,7 +1,7 @@
 import React from 'react';
 import ListarCard from './ListarCard';
 
-export default function RenderizarFlashcards({ data, index, placar, setPlacar, erros, setErros}) {
+export default function RenderizarFlashcards({ data, index, placar, setPlacar, erros, setErros, zaps, setZaps}) {
     const [status, setStatus] = React.useState('fechada');
     const [frente, setFrente] = React.useState(true);
     const [resultado, setResultado] = React.useState('');
@@ -11,6 +11,9 @@ export default function RenderizarFlashcards({ data, index, placar, setPlacar, e
         setPlacar([...placar,icon])
         if (resposta.target.className === 'ruim') {
             setErros(erros + 1);
+        }
+        if (resposta.target.className === 'bom') {
+            setZaps(zaps + 1);
         }
     }
 
