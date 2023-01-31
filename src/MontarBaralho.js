@@ -18,7 +18,7 @@ export default function MontarBaralho(baralho) {
         case 'one piece':
             perguntas = [
                 {pergunta: 'Por que a Nami era uma ladra?', resposta: 'Para pagar uma dívida e salvar sua família', estado: 'fechada', resultado: ''},
-                {pergunta: 'Como o Sanji aprende a andar nos céus?', resposta: 'No auge da sua masculinidade frágil, de tanto fugir de travestis', estado: 'fechada', resultado: ''},
+                {pergunta: 'Como o Sanji aprende a andar nos céus?', resposta: 'No auge da sua masculinidade frágil, de tanto fugir de transexuais', estado: 'fechada', resultado: ''},
                 {pergunta: 'Como Luffy avisou sua tripulação que não poderiam se reencontrar em três dias, mas deveriam treinar por dois anos?', resposta: '3D2Y', estado: 'fechada', resultado: ''},
                 {pergunta: 'Qual é o combustível do ciborgue Franky?', resposta: 'Franky Cola', estado: 'fechada', resultado: ''},
                 {pergunta: 'Qual pirata da geração de novatos se alia ao Luffy?', resposta: 'Trafalgar Law', estado: 'fechada', resultado: ''},
