@@ -13,8 +13,8 @@ ZapRecall lets you do this, without the need of crafting your flashcards!<br>
 You can also set ZAP goals and easily feel how you're doing!
 
 ### Try it:
-  - Choose a deck
   - Set your Zap goal
+  - Choose a deck
   - ***ZAP***
   - Review if you achieved your goal
   - Observe how well you're doing
@@ -26,4 +26,4 @@ You can also set ZAP goals and easily feel how you're doing!
 
 ## How to run
 
-Run the application at your local host and start using it!
+Acess the [deployment link](https://projeto8-zaprecall-k6jn5c5uy-mmparadinha.vercel.app/) and start using it right now!
